@@ -120,6 +120,28 @@ h1, h2, h3 {
   font-weight: 600;
   text-align: center;
 }
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.social-icon {
+  color: #e5e7eb;
+  font-size: 22px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  background: white;
+  color: #0f172a;
+}
+
 
 
 /* ===== FOOTER ===== */
