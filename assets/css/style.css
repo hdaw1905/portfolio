@@ -253,10 +253,12 @@ footer.footer .footer-icons a:hover {
 }
 
 }
-.heart-icon {
-  color: #ef4444; /* soft red */
-  margin: 0 4px;
+/* Force heart color */
+.footer .heart-icon,
+.footer .fa-heart {
+  color: #ef4444 !important; /* red */
 }
+
 
 
 
