@@ -121,26 +121,34 @@ h1, h2, h3 {
   text-align: center;
 }
 .social-links {
-  margin-top: 20px;
+  margin-top: 22px;
   display: flex;
   justify-content: center;
-  gap: 18px;
+  gap: 16px;
 }
 
-.social-icon {
-  color: #e5e7eb;
-  font-size: 22px;
+/* Circular icon buttons */
+.social-circle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 20px;
   text-decoration: none;
-  border: 1px solid rgba(255,255,255,0.4);
-  padding: 10px 14px;
-  border-radius: 8px;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 
-.social-icon:hover {
-  background: white;
-  color: #0f172a;
+/* Hover effect */
+.social-circle:hover {
+  background: #ffffff;
+  color: #1e3a8a; /* matches your blue theme */
+  transform: translateY(-2px);
 }
+
 
 
 
