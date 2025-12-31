@@ -120,34 +120,7 @@ h1, h2, h3 {
   font-weight: 600;
   text-align: center;
 }
-.social-links {
-  margin-top: 22px;
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-}
 
-/* Circular icon buttons */
-.social-circle {
-  width: 44px;
-  height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.15);
-  color: #ffffff;
-  border-radius: 50%;
-  font-size: 20px;
-  text-decoration: none;
-  transition: all 0.25s ease;
-}
-
-/* Hover effect */
-.social-circle:hover {
-  background: #ffffff;
-  color: #1e3a8a; /* matches your blue theme */
-  transform: translateY(-2px);
-}
 
 
 
@@ -168,4 +141,39 @@ footer {
     gap: 12px;
   }
 }
+
+/* === HEADER SOCIAL ICONS (FORCE OVERRIDE) === */
+.header .social-links {
+  margin-top: 28px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.header .social-circle {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+
+  transition: background 0.25s ease,
+              color 0.25s ease,
+              transform 0.25s ease;
+}
+
+.header .social-circle:hover {
+  background: #ffffff;
+  color: #1e3a8a;
+  transform: translateY(-3px);
+}
+
+
 
