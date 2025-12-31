@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Projects | Hesham Abdalla</title>
+  <title>Projects | Hesham Eina Abdalla</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -20,19 +20,218 @@
 <div class="container">
 
   <div class="card">
-    <h2>Selected Projects</h2>
-    <ul>
-      <li><strong>Foam Stability Analysis</strong> — ML Microscopy Hackathon 2025</li>
-      <li><strong>Custom ESP32 PCB</strong> — 4-layer board</li>
-      <li><strong>STM32 Platform</strong> — KiCad v9</li>
-      <li><strong>SP02Sense</strong> — Pulse Oximeter</li>
-    </ul>
+    <h2>Engineering Projects</h2>
+    <p>
+      This section presents a comprehensive overview of my engineering projects,
+      spanning embedded hardware design, intelligent sensing systems, computer
+      vision, applied machine learning, and autonomous platforms. Each project
+      reflects hands-on development, system-level integration, and engineering
+      decision-making under real technical constraints.
+    </p>
+  </div>
+
+  <!-- ===================== Microscopy / ML ===================== -->
+  <div class="card">
+    <h3>Image-Driven Foam Stability Analysis</h3>
+    <p><em>Microscopy Hackathon 2025 — AISCIA Informatics</em></p>
+    <p>
+      Developed an image-driven analytical pipeline to study bubble dynamics and
+      foam stability using time-resolved microscopy images. The objective was to
+      extract physically meaningful stability indicators directly from visual
+      data without intrusive measurements.
+    </p>
+    <p>
+      Designed segmentation and tracking workflows to quantify bubble size
+      distributions, coarsening rates, spatial packing, and entropy-based
+      disorder metrics. These features were integrated into an explainable
+      machine learning framework to correlate early-stage dynamics with long-term
+      foam stability.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Python, image segmentation, feature
+      engineering, explainable ML, scientific data analysis
+    </p>
+  </div>
+
+  <!-- ===================== ESP32 ===================== -->
+  <div class="card">
+    <h3>Custom ESP32 Board Design</h3>
+    <p><em>Hardware Design Project</em></p>
+    <p>
+      Designed a custom ESP32-based development board to gain full-cycle hardware
+      experience from schematic design through PCB layout and validation.
+    </p>
+    <p>
+      Integrated ESP32-WROOM module, CP2102 USB–UART bridge, AMS1117 voltage
+      regulation, ESD protection, and USB differential pair routing on a
+      four-layer PCB. Generated complete manufacturing outputs including BOM and
+      pick-and-place files.
+    </p>
+    <p>
+      <strong>Technologies:</strong> ESP32, EasyEDA, 4-layer PCB design, USB,
+      hardware debugging
+    </p>
+  </div>
+
+  <!-- ===================== STM32 ===================== -->
+  <div class="card">
+    <h3>STM32-Based Embedded Hardware Platform</h3>
+    <p><em>PCB & Embedded Systems Project</em></p>
+    <p>
+      Designed a custom embedded platform around the STM32F103 microcontroller
+      with focus on reliable power delivery, clocking, and peripheral
+      integration.
+    </p>
+    <p>
+      Implemented decoupling networks, external oscillator circuitry, USB
+      connectivity, and UART/I²C interfaces following datasheet and signal
+      integrity best practices. Generated fabrication-ready Gerbers and BOMs.
+    </p>
+    <p>
+      <strong>Technologies:</strong> STM32F103, KiCad v9, embedded hardware design
+    </p>
+  </div>
+
+  <!-- ===================== Biomedical ===================== -->
+  <div class="card">
+    <h3>SP02Sense — Arduino-Based Pulse Oximeter</h3>
+    <p><em>Embedded & Biomedical Sensing Project</em></p>
+    <p>
+      Designed a compact pulse oximeter to measure blood oxygen saturation and
+      heart rate using the MAX30102 optical sensor.
+    </p>
+    <p>
+      Developed a four-layer PCB integrating the MAX30102 sensor, SSD1306 OLED
+      display, debounced buttons, and LED-based alert system. Implemented
+      real-time firmware for data acquisition, signal processing, and user
+      interaction.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Arduino, MAX30102, OLED display, real-time
+      embedded firmware
+    </p>
+  </div>
+
+  <!-- ===================== AI / Energy ===================== -->
+  <div class="card">
+    <h3>Fuel Blend Property Prediction</h3>
+    <p><em>Shell.ai Hackathon 2025</em></p>
+    <p>
+      Built predictive machine learning models to estimate ten fuel properties
+      for conventional and sustainable aviation fuel (SAF) blends.
+    </p>
+    <p>
+      Engineered polynomial and interaction features, implemented stacking
+      ensembles combining LightGBM, XGBoost, and Ridge regression, and optimized
+      performance through cross-validated hyperparameter tuning.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Python, LightGBM, XGBoost, feature
+      engineering, regression modeling
+    </p>
+  </div>
+
+  <!-- ===================== CV / Gesture ===================== -->
+  <div class="card">
+    <h3>Customizable Hand Gesture Controller for Gamers</h3>
+    <p><em>Computer Vision & Human–Computer Interaction Project</em></p>
+    <p>
+      Developed a real-time hand gesture recognition system for gaming
+      applications using camera-based input.
+    </p>
+    <p>
+      Implemented gesture detection and tracking using MediaPipe and OpenCV, and
+      trained classification models with TensorFlow and Keras. Designed a modular
+      architecture allowing users to define custom gestures mapped to in-game
+      actions.
+    </p>
+    <p>
+      <strong>Technologies:</strong> OpenCV, MediaPipe, TensorFlow, Keras,
+      real-time vision
+    </p>
+  </div>
+
+  <!-- ===================== Drone ===================== -->
+  <div class="card">
+    <h3>Autonomous Vehicle-Tracking Drone System</h3>
+    <p><em>SCORPE Tech — Industry Project</em></p>
+    <p>
+      Contributed to the development of an autonomous drone system capable of
+      real-time vehicle tracking and pursuit using onboard computer vision.
+    </p>
+    <p>
+      Integrated a YOLOv8-based detection pipeline with the drone’s onboard
+      compute and flight-control stack, achieving low-latency inference and high
+      autonomy. Implemented camera calibration, route generation, and LiDAR-based
+      obstacle avoidance, resulting in zero collision incidents during testing.
+    </p>
+    <p>
+      <strong>Technologies:</strong> YOLOv8, embedded AI, drones, LiDAR, autonomous
+      navigation
+    </p>
+  </div>
+
+  <!-- ===================== Smart Traffic ===================== -->
+  <div class="card">
+    <h3>Smart IoT Traffic System — ALPR Gate</h3>
+    <p><em>Qatar University Capstone Project</em></p>
+    <p>
+      Built a smart traffic gate system using automatic license plate
+      recognition to reduce congestion and improve access control efficiency.
+    </p>
+    <p>
+      Implemented an ALPR pipeline using Raspberry Pi and Rekor Scout, achieving
+      over 95% recognition accuracy within 10 meters. Designed a physical gate
+      prototype driven by a NEMA 23 stepper motor and DM542T driver, reducing gate
+      congestion by approximately 60%.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Raspberry Pi, ALPR, stepper motors, IoT
+    </p>
+  </div>
+
+  <!-- ===================== Environmental ===================== -->
+  <div class="card">
+    <h3>Environmental Monitoring System</h3>
+    <p><em>Embedded Systems Project</em></p>
+    <p>
+      Designed an environmental monitoring system integrating multiple sensors
+      for temperature, humidity, gas concentration, and environmental alerts.
+    </p>
+    <p>
+      Implemented real-time monitoring, alert logic, and relay-based control of
+      AC devices through a user interface, demonstrating practical control and
+      automation workflows.
+    </p>
+    <p>
+      <strong>Technologies:</strong> Mbed LPC1768, sensors, relays, embedded
+      control
+    </p>
+  </div>
+
+  <!-- ===================== Signal Processing ===================== -->
+  <div class="card">
+    <h3>Speech Processing & Pitch Modulation</h3>
+    <p><em>Signal Processing Project</em></p>
+    <p>
+      Developed signal processing workflows to analyze and manipulate pitch and
+      modulation characteristics of audio signals.
+    </p>
+    <p>
+      Processed over 50 audio samples in MATLAB, achieving pitch modulation
+      within ±3 semitones and sub-50 ms latency. This project strengthened my
+      understanding of real-time signal processing and audio analysis techniques.
+    </p>
+    <p>
+      <strong>Technologies:</strong> MATLAB, DSP, audio processing
+    </p>
   </div>
 
 </div>
 
-<footer>© 2025 Hesham Eina Abdalla</footer>
+<footer>
+  © 2025 Hesham Eina Abdalla
+</footer>
 
 </body>
 </html>
-
