@@ -98,6 +98,29 @@ h1, h2, h3 {
 .btn:hover {
   background: #1d4ed8;
 }
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  transition: transform 0.2s ease;
+}
+
+.cert-card img:hover {
+  transform: scale(1.03);
+}
+
+.cert-card p {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
 
 /* ===== FOOTER ===== */
 footer {
