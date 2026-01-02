@@ -112,7 +112,7 @@ a:hover {
   color: var(--text-main);
   font-size: 20px;
   cursor: pointer;
-  margin-left: margin-left: auto;   /* 👈 pushes ONLY the toggle to the right */
+  margin-left: auto;   /* 👈 pushes ONLY the toggle to the right */
   transition: transform 0.2s ease;
 }
 
