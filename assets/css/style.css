@@ -1,4 +1,29 @@
 /* ===== GLOBAL ===== */
+/* ===== THEME VARIABLES ===== */
+:root {
+  /* Dark mode (default) */
+  --bg-main: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-card: #111827;
+
+  --text-main: #ffffff;
+  --text-secondary: #cbd5f5;
+
+  --accent: #2563eb;
+}
+
+body.light-mode {
+  /* Light mode */
+  --bg-main: #f8fafc;
+  --bg-secondary: #e5e7eb;
+  --bg-card: #ffffff;
+
+  --text-main: #0f172a;
+  --text-secondary: #334155;
+
+  --accent: #2563eb;
+}
+
 * {
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Arial, sans-serif;
@@ -10,6 +35,7 @@ body {
   color: #1e293b;
   line-height: 1.6;
 }
+
 
 /* ===== THEME TOGGLE ===== */
 .theme-toggle {
