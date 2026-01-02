@@ -92,7 +92,7 @@ a:hover {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 32px;
   padding: 0;
 }
 
