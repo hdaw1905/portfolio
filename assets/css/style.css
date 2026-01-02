@@ -5,7 +5,7 @@
   /* Dark mode (default) */
   --bg-main: #383f4e;        /* page background */
   --bg-secondary: #1e293b;  /* navbar / footer */
-  --bg-surface: #172554;    /* 👈 NEW: content surface */
+  --bg-surface: #383f4e;    /* 👈 NEW: content surface */
   --bg-card: #111827;       /* cards */
 
   --text-main: #ffffff;
