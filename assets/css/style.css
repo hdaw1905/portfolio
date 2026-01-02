@@ -73,10 +73,11 @@ a:hover {
   max-width: 1100px;
   margin: 0 auto;
   padding: 14px 20px;
+
   display: flex;
   align-items: center;
-  gap: 20px;
 }
+
 
 /* Hamburger — hidden by default (desktop) */
 .nav-toggle {
@@ -92,8 +93,9 @@ a:hover {
 .nav-menu {
   list-style: none;
   display: flex;
-  gap: 36px;
+  gap: 32px;            /* clean spacing */
   padding: 0;
+  margin: 0;
 }
 
 .nav-menu a {
@@ -107,13 +109,12 @@ a:hover {
 
 /* Theme toggle */
 .theme-toggle {
+  margin-left: auto;   /* THIS pushes it to the far right */
   background: none;
   border: none;
   color: var(--text-main);
   font-size: 20px;
   cursor: pointer;
-  margin-left: auto;   /* 👈 pushes ONLY the toggle to the right */
-  transition: transform 0.2s ease;
 }
 
 .theme-toggle:hover {
