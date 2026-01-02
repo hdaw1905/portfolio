@@ -11,6 +11,27 @@ body {
   line-height: 1.6;
 }
 
+/* ===== THEME TOGGLE ===== */
+.theme-toggle {
+  margin-left: 16px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  color: #38bdf8;
+}
+
+/* Push toggle to the right */
+.nav-menu {
+  margin-left: auto;
+}
+
 /* ===== NAVBAR ===== */
 .navbar {
   background: #0f172a;
@@ -249,3 +270,37 @@ h1, h2, h3 {
     gap: 8px;
   }
 }
+/* ===== LIGHT MODE ===== */
+body.light-mode {
+  background: #f8fafc;
+  color: #1e293b;
+}
+
+body.light-mode .navbar {
+  background: #e5e7eb;
+}
+
+body.light-mode .nav-menu a,
+body.light-mode .nav-toggle,
+body.light-mode .theme-toggle {
+  color: #0f172a;
+}
+
+body.light-mode .header {
+  background: linear-gradient(135deg, #e5e7eb, #cbd5f5);
+  color: #0f172a;
+}
+
+body.light-mode .card {
+  background: white;
+}
+
+body.light-mode .footer {
+  background: #e5e7eb;
+  color: #0f172a;
+}
+
+body.light-mode .footer-icons a {
+  color: #0f172a;
+}
+
