@@ -149,5 +149,25 @@
   });
 </script>
 
+<script>
+  const themeBtn = document.querySelector('.theme-toggle');
+  const icon = themeBtn.querySelector('i');
+
+  // Load saved theme
+  if (localStorage.getItem('theme') === 'light') {
+    document.body.classList.add('light-mode');
+    icon.classList.replace('fa-moon', 'fa-sun');
+  }
+
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+
+    const isLight = document.body.classList.contains('light-mode');
+    icon.classList.toggle('fa-moon', !isLight);
+    icon.classList.toggle('fa-sun', isLight);
+
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  });
+</script>
 </body>
 </html>
